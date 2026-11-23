@@ -19,8 +19,7 @@
         .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
         
         /* Header / Hero */
-        header { padding: 80px 0 60px; border-bottom: 1px solid var(--border); }
-        .badge { display: inline-block; background: rgba(56, 189, 248, 0.15); color: var(--accent); padding: 6px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; margin-bottom: 16px; }
+        header { padding: 70px 0 50px; border-bottom: 1px solid var(--border); }
         h1 { font-size: 2.8rem; margin-bottom: 12px; letter-spacing: -0.02em; }
         .subtitle { font-size: 1.2rem; color: var(--muted); max-width: 720px; margin-bottom: 28px; }
         .btn-group { display: flex; flex-wrap: wrap; gap: 12px; }
@@ -35,9 +34,9 @@
         h2 { font-size: 1.8rem; margin-bottom: 28px; color: var(--text); }
         
         /* Metrics Bar */
-        .metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-top: 40px; }
+        .metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 40px; }
         .metric-box { background: var(--card); padding: 20px; border-radius: 8px; border: 1px solid var(--border); }
-        .metric-box h3 { font-size: 1.8rem; color: var(--accent); }
+        .metric-box h3 { font-size: 1.8rem; color: var(--accent); margin-bottom: 4px; }
         .metric-box p { font-size: 0.9rem; color: var(--muted); }
 
         /* Projects Grid */
@@ -52,16 +51,20 @@
         .card-links a { color: var(--accent); text-decoration: none; font-weight: 600; font-size: 0.9rem; margin-right: 16px; }
         .card-links a:hover { text-decoration: underline; }
 
-        /* Skills & Experience */
-        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+        /* Experience */
+        .exp-item { margin-bottom: 32px; background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 24px; }
+        .exp-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; border-bottom: 1px solid rgba(255,255,255,0.06); padding-bottom: 10px; }
+        .exp-title { font-weight: 700; font-size: 1.15rem; color: #fff; }
+        .exp-company { color: var(--accent); font-weight: 600; }
+        .exp-date { color: var(--muted); font-size: 0.9rem; font-weight: 500; }
+        .exp-item ul { margin-left: 20px; color: var(--muted); font-size: 0.95rem; }
+        .exp-item li { margin-bottom: 8px; }
+
+        /* Skills & Education Grid */
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .skill-cat { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 20px; }
         .skill-cat h4 { color: var(--accent); margin-bottom: 8px; font-size: 1rem; }
         .skill-cat p { color: var(--muted); font-size: 0.92rem; }
-        .exp-item { margin-bottom: 28px; }
-        .exp-header { display: flex; justify-content: space-between; flex-wrap: wrap; margin-bottom: 8px; }
-        .exp-title { font-weight: 700; font-size: 1.15rem; }
-        .exp-date { color: var(--accent); font-size: 0.9rem; font-weight: 600; }
-        .exp-item ul { margin-left: 20px; color: var(--muted); font-size: 0.95rem; }
-        .exp-item li { margin-bottom: 6px; }
 
         footer { padding: 40px 0; text-align: center; color: var(--muted); font-size: 0.9rem; }
     </style>
@@ -71,7 +74,6 @@
 <div class="container">
     <!-- HERO SECTION -->
     <header>
-        <span class="badge">Open to Data & Growth Analyst Roles</span>
         <h1>Haradev Dagur</h1>
         <p class="subtitle">
             Growth & Data Analyst at Matrix Education. I engineer automated Python/SQL ETL pipelines, LLM-assisted workflows, and executive Power BI dashboards that turn messy data into measurable revenue and operational efficiency.
@@ -79,25 +81,62 @@
         <div class="btn-group">
             <a href="Haradev_Dagur_Analyst.pdf" class="btn btn-primary" download>Download Resume (PDF)</a>
             <a href="https://github.com/hardevdagur03-wq" target="_blank" class="btn btn-outline">GitHub</a>
-            <a href="https://linkedin.com/in/hardevdagur" target="_blank" class="btn btn-outline">LinkedIn</a>
+            <a href="https://linkedin.com/in/haradev-dagur-924760394" target="_blank" class="btn btn-outline">LinkedIn</a>
             <a href="mailto:hardevdagur03@gmail.com" class="btn btn-outline">hardevdagur03@gmail.com</a>
         </div>
 
         <div class="metrics">
             <div class="metric-box">
-                <h3>70–80%</h3>
-                <p>Reduction in manual reporting effort via Python & Sheets automation</p>
+                <h3>90%+ Time Saved</h3>
+                <p>Cut weekly report preparation from 8 hours to &lt;30 mins (30+ hrs saved/month)</p>
             </div>
             <div class="metric-box">
-                <h3>$185.59M</h3>
-                <p>At-risk revenue identified via Power BI churn segmentation</p>
+                <h3>10+ Pipelines</h3>
+                <p>Automated SEO reporting workflows, scrapers &amp; data validation ETLs engineered</p>
             </div>
             <div class="metric-box">
-                <h3>10+</h3>
-                <p>Automated ETL, SEO & web-scraping pipelines engineered</p>
+                <h3>5+ Dashboards</h3>
+                <p>Interactive BI dashboards across Looker Studio &amp; Power BI for executive leadership</p>
             </div>
         </div>
     </header>
+
+    <!-- PROFESSIONAL EXPERIENCE -->
+    <section id="experience">
+        <h2>Professional Experience</h2>
+        
+        <div class="exp-item">
+            <div class="exp-header">
+                <div>
+                    <span class="exp-title">Growth Analyst</span>
+                    <span class="exp-company"> — Matrix Education (Jaipur, India)</span>
+                    <span style="display: block; font-size: 0.85rem; color: var(--accent); font-weight: 500;">Promoted from Data Analyst Intern</span>
+                </div>
+                <span class="exp-date">Sep 2026 – Present</span>
+            </div>
+            <ul>
+                <li><strong>Reporting Automation:</strong> Automated 10+ SEO reporting workflows using Python and Google Sheets, cutting the manager’s weekly report preparation from 8 hours to under 30 minutes of monitoring (over 90% time saved, 30+ hours per month).</li>
+                <li><strong>Competitor Intelligence &amp; LLMs:</strong> Built Python web scrapers (BeautifulSoup, Selenium) to track 5+ competitor YouTube channels and web sources, using Claude (LLM) to turn the data into reports that support 15+ data-driven blog posts per month.</li>
+                <li><strong>Executive Dashboards:</strong> Developed 5 interactive dashboards in Looker Studio and Power BI using GA4 and SQL to track traffic, CTR, revenue, and student-performance KPIs, replacing manual Excel reports for leadership stakeholders.</li>
+                <li><strong>End-to-End ETL Engineering:</strong> Engineered an automated SEO data-cleaning tool and end-to-end ETL pipelines (Python, Pandas, Scrapy) to validate business and SEO datasets, using AI coding tools (Claude Code, Codex) to speed up development.</li>
+            </ul>
+        </div>
+
+        <div class="exp-item">
+            <div class="exp-header">
+                <div>
+                    <span class="exp-title">Data Analyst Intern</span>
+                    <span class="exp-company"> — Matrix Education (Jaipur, India)</span>
+                </div>
+                <span class="exp-date">Apr 2026 – Aug 2026</span>
+            </div>
+            <ul>
+                <li><strong>Metric Analysis:</strong> Analyzed SEO and business metrics (traffic, impressions, clicks, CTR, content performance) using SQL, Python, and Excel to support recurring SEO and business reports.</li>
+                <li><strong>Data Wrangling:</strong> Cleaned and transformed raw website and student data with Python and Google Sheets, creating repeatable workflows that made recurring reports consistent and faster to produce.</li>
+                <li><strong>Dashboard Maintenance:</strong> Maintained Power BI and Excel dashboards to monitor website, SEO, student-performance, and operational KPIs.</li>
+            </ul>
+        </div>
+    </section>
 
     <!-- FEATURED PROJECTS -->
     <section id="projects">
@@ -116,9 +155,9 @@
                     <h3>EuroTrust Bank Customer Churn Analysis</h3>
                     <p>End-to-end retention analysis of 10,000+ banking records to uncover churn drivers and regional revenue risk.</p>
                     <ul>
-                        <li>Identified <strong>$185.59M in at-risk revenue</strong> and a 20.37% overall churn rate.</li>
-                        <li>Flagged a high-risk segment with a <strong>95% churn anomaly</strong> and proposed targeted product bundles.</li>
-                        <li>Built interactive DAX-driven KPI reports for dynamic regional risk tracking.</li>
+                        <li>Analyzed 10,000 customer records and identified a <strong>20.37% churn rate</strong> (2,037 customers) with <strong>185.59M in account balances</strong> held by churned customers.</li>
+                        <li>Discovered that customers with 4 products churned at <strong>100% vs 7.58%</strong> for 2-product customers, and recommended targeted retention bundles.</li>
+                        <li>Built an interactive 3-page Power BI dashboard with DAX-driven KPIs tracking risk by region, age, and product count.</li>
                     </ul>
                 </div>
                 <div class="card-links">
@@ -138,8 +177,8 @@
                     <p>Cleaned and analyzed 10,841+ apps and 64K+ user reviews across 33 categories (146.6B+ total installs).</p>
                     <ul>
                         <li>Produced 10,356 analysis-ready records through automated Python data wrangling.</li>
-                        <li>Engineered features (Install Buckets, Price Bands) and wrote BigQuery SQL queries.</li>
-                        <li>Designed a <strong>5-page Power BI dashboard</strong> delivering 40+ pricing & rating insights.</li>
+                        <li>Performed EDA and BigQuery SQL queries on ratings, pricing bands, installs, and review sentiments.</li>
+                        <li>Designed a <strong>5-page Power BI dashboard</strong> delivering 40+ monetization and pricing strategy insights.</li>
                     </ul>
                 </div>
                 <div class="card-links">
@@ -158,9 +197,9 @@
                     <h3>Automated YouTube & SEO Intelligence Pipeline</h3>
                     <p>Production internal tools built at Matrix Education to automate content metadata, transcript extraction, and SEO reporting.</p>
                     <ul>
-                        <li>Cut manual reporting effort by <strong>70–80%</strong> across 10+ automated workflows.</li>
-                        <li>Extracted and analyzed video transcripts, CTR, clicks, and publishing logs at scale.</li>
-                        <li>Integrated LLM workflows (Claude Code / Codex) for rapid insight synthesis.</li>
+                        <li>Cut weekly report preparation from 8 hours to under 30 minutes (over 90% time saved).</li>
+                        <li>Extracted competitor video metadata, transcripts, CTR, and publishing logs across 5+ channels.</li>
+                        <li>Integrated LLM workflows (Claude / Codex) to synthesize reports supporting 15+ data-driven blog posts monthly.</li>
                     </ul>
                 </div>
                 <div class="card-links">
@@ -171,57 +210,41 @@
         </div>
     </section>
 
-    <!-- EXPERIENCE -->
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="exp-item">
-            <div class="exp-header">
-                <span class="exp-title">Growth Analyst — Matrix Education (Jaipur)</span>
-                <span class="exp-date">Sep 2026 – Present</span>
-            </div>
-            <ul>
-                <li>Engineered 10+ automated SEO and reporting workflows using Python and Google Sheets, cutting manual effort by 70–80%.</li>
-                <li>Built 5+ dashboards in Looker Studio, GA4, SQL, and Power BI tracking traffic, CTR, revenue, and student KPIs.</li>
-                <li>Developed Python web-scraping and YouTube intelligence pipelines (Pandas, BeautifulSoup, Selenium, Scrapy).</li>
-            </ul>
-        </div>
-        <div class="exp-item">
-            <div class="exp-header">
-                <span class="exp-title">Data Analyst Intern — Matrix Education (Jaipur)</span>
-                <span class="exp-date">Apr 2026 – Aug 2026</span>
-            </div>
-            <ul>
-                <li>Executed data cleaning, validation, and recurring SEO/business performance reporting using Python, SQL, and Power BI.</li>
-                <li>Applied LLM-assisted workflows to accelerate data transformation and internal reporting.</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- SKILLS & EDUCATION -->
+    <!-- TECHNICAL SKILLS & EDUCATION -->
     <section id="skills">
         <h2>Technical Stack & Education</h2>
         <div class="skills-grid">
             <div class="skill-cat">
                 <h4>Programming & Databases</h4>
-                <p>SQL (BigQuery, MySQL, PostgreSQL), Python (Pandas, NumPy, Matplotlib, BeautifulSoup, Scrapy, Selenium), DAX</p>
+                <p>SQL (BigQuery, MySQL, PostgreSQL), Python (Pandas, NumPy, Matplotlib, BeautifulSoup, Scrapy, Selenium, Requests), DAX</p>
+            </div>
+            <div class="skill-cat">
+                <h4>Data Analysis & ETL</h4>
+                <p>Data Cleaning, Data Wrangling, ETL Pipeline Design, Data Validation, Exploratory Data Analysis (EDA)</p>
             </div>
             <div class="skill-cat">
                 <h4>BI & Visualization</h4>
-                <p>Power BI (Desktop & Service), Looker Studio, Tableau, Advanced Excel, Google Sheets</p>
+                <p>Power BI (Desktop & Service), Looker Studio, Tableau, Advanced Excel, Google Sheets, Google Analytics 4 (GA4)</p>
             </div>
             <div class="skill-cat">
                 <h4>AI & Dev Workflows</h4>
-                <p>Claude Code, OpenAI Codex, Antigravity, Git & GitHub, ETL Pipeline Design</p>
+                <p>Claude Code, OpenAI Codex, Antigravity, LLM Tools (Claude, ChatGPT, Gemini), Git &amp; GitHub</p>
             </div>
             <div class="skill-cat">
-                <h4>Education & Certs</h4>
-                <p>B.Sc. Mathematics (8.3 CGPA) • PGDCA (8.2 CGPA) • HackerRank SQL Certified</p>
+                <h4>Education</h4>
+                <p><strong>Pratap University (2025):</strong> PGDCA (CGPA: 8.2/10)<br>
+                <strong>SS Jain Subodh PG College (2023):</strong> B.Sc. in Mathematics (CGPA: 8.3/10)</p>
+            </div>
+            <div class="skill-cat">
+                <h4>Certifications</h4>
+                <p>• SQL – HackerRank Certificate<br>
+                • Data Analyst Bootcamp (Advanced) – Udemy Certificate</p>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>Haradev Dagur • Jaipur, Rajasthan • +91 8890630606 • hardevdagur03@gmail.com</p>
+        <p>Haradev Dagur • Jaipur, Rajasthan, India • +91 8890630606 • <a href="mailto:hardevdagur03@gmail.com" style="color: var(--accent); text-decoration: none;">hardevdagur03@gmail.com</a></p>
     </footer>
 </div>
 
